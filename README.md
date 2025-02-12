@@ -89,7 +89,11 @@ End Object
 Begin Object Class=/Script/UMG.WidgetSwitcher Name="WidgetSwitcher" ExportPath="/Script/UMG.WidgetSwitcher'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher'"
    Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_0" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_0'"
    End Object
+   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_5" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_5'"
+   End Object
    Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_1" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_1'"
+   End Object
+   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_4" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_4'"
    End Object
    Begin Object Name="WidgetSwitcherSlot_0" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_0'"
       HorizontalAlignment=HAlign_Center
@@ -97,14 +101,28 @@ Begin Object Class=/Script/UMG.WidgetSwitcher Name="WidgetSwitcher" ExportPath="
       Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher'"
       Content="/Script/UMG.GridPanel'GridPanel_162'"
    End Object
+   Begin Object Name="WidgetSwitcherSlot_5" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_5'"
+      HorizontalAlignment=HAlign_Center
+      VerticalAlignment=VAlign_Center
+      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher'"
+      Content="/Script/UMG.HorizontalBox'Bank_HBox'"
+   End Object
    Begin Object Name="WidgetSwitcherSlot_1" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_1'"
       HorizontalAlignment=HAlign_Center
       VerticalAlignment=VAlign_Center
       Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher'"
       Content="/Script/UMG.HorizontalBox'SiparişVer_HBox'"
    End Object
+   Begin Object Name="WidgetSwitcherSlot_4" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_4'"
+      HorizontalAlignment=HAlign_Center
+      VerticalAlignment=VAlign_Center
+      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher'"
+      Content="/Script/UMG.VerticalBox'Reklam_VBox'"
+   End Object
    Slots(0)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_0'"
    Slots(1)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_1'"
+   Slots(2)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_4'"
+   Slots(3)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_5'"
    bExpandedInDesigner=True
    DisplayLabel="WidgetSwitcher"
 End Object
@@ -170,7 +188,7 @@ Begin Object Class=/Script/UMG.GridPanel Name="GridPanel_162" ExportPath="/Scrip
    Begin Object Name="GridSlot_2" ExportPath="/Script/UMG.GridSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.GridPanel_162.GridSlot_2'"
       Column=1
       Parent="/Script/UMG.GridPanel'GridPanel_162'"
-      Content="/Script/UMG.Button'MarketGeliştir_Btn'"
+      Content="/Script/UMG.Button'MarketYönetimi_Btn'"
    End Object
    Begin Object Name="GridSlot_1" ExportPath="/Script/UMG.GridSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.GridPanel_162.GridSlot_1'"
       Column=2
@@ -311,16 +329,16 @@ End Object
 Begin Object Class=/Script/UMG.Image Name="Image_2" ExportPath="/Script/UMG.Image'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Image_2'"
    Brush=(ImageType=FullColor,ImageSize=(X=128.000000,Y=128.000000),ResourceObject="/Script/Engine.Texture2D'/Game/Tex/DALL·E_2025-01-21_12_09_30_-_A_creative_concept_image_representing_the_idea_of_advertising__featuring_the_word__ADS__in_bold__modern_typography__The_word_is_placed_centrally_on_a_.DALL·E_2025-01-21_12_09_30_-_A_creative_concept_image_representing_the_idea_of_advertising__featuring_the_word__ADS__in_bold__modern_typography__The_word_is_placed_centrally_on_a_'")
 End Object
-Begin Object Class=/Script/UMG.Button Name="MarketGeliştir_Btn" ExportPath="/Script/UMG.Button'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.MarketGeliştir_Btn'"
-   Begin Object Class=/Script/UMG.ButtonSlot Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.MarketGeliştir_Btn.ButtonSlot_0'"
+Begin Object Class=/Script/UMG.Button Name="MarketYönetimi_Btn" ExportPath="/Script/UMG.Button'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.MarketYönetimi_Btn'"
+   Begin Object Class=/Script/UMG.ButtonSlot Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.MarketYönetimi_Btn.ButtonSlot_0'"
    End Object
-   Begin Object Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.MarketGeliştir_Btn.ButtonSlot_0'"
-      Parent="/Script/UMG.Button'MarketGeliştir_Btn'"
+   Begin Object Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.MarketYönetimi_Btn.ButtonSlot_0'"
+      Parent="/Script/UMG.Button'MarketYönetimi_Btn'"
       Content="/Script/UMG.Image'Image_1'"
    End Object
    BackgroundColor=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
    Slots(0)="/Script/UMG.ButtonSlot'ButtonSlot_0'"
-   DisplayLabel="MarketGeliştir_Btn"
+   DisplayLabel="MarketYönetimi_Btn"
 End Object
 Begin Object Class=/Script/UMG.Image Name="Image_1" ExportPath="/Script/UMG.Image'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Image_1'"
    Brush=(ImageType=FullColor,ImageSize=(X=128.000000,Y=128.000000),ResourceObject="/Script/Engine.Texture2D'/Game/Tex/canva-pastelcore-market-sticker-MAE7AtJ6E5U.canva-pastelcore-market-sticker-MAE7AtJ6E5U'")
@@ -385,7 +403,7 @@ Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_707" ExportPath="/Scrip
    Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "D88AEAFC46AD7FE91F2233BDF1FD8A91", "Sipariş Ver")
 End Object
 Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_938" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_938'"
-   Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "53FD689F417AA72D3076C9BAD7B11E38", "Market Geliştirme")
+   Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "53FD689F417AA72D3076C9BAD7B11E38", "Market Yönetimi")
 End Object
 Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_1096" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_1096'"
    Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "DF5235C8455337205DEA66B03E68874C", "Reklam Ver")
@@ -453,7 +471,7 @@ Begin Object Class=/Script/UMG.HorizontalBox Name="SiparişVer_HBox" ExportPath=
    End Object
    Begin Object Name="HorizontalBoxSlot_3" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.SiparişVer_HBox.HorizontalBoxSlot_3'"
       Parent="/Script/UMG.HorizontalBox'SiparişVer_HBox'"
-      Content="/Script/UMG.WidgetSwitcher'WidgetSwitcher_0'"
+      Content="/Script/UMG.WidgetSwitcher'WidgetSwitcher_Siparis'"
    End Object
    Slots(0)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_0'"
    Slots(1)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_2'"
@@ -551,21 +569,22 @@ End Object
 Begin Object Class=/Script/UMG.Spacer Name="Spacer_962" ExportPath="/Script/UMG.Spacer'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Spacer_962'"
    Size=(X=10.000000,Y=1.000000)
 End Object
-Begin Object Class=/Script/UMG.WidgetSwitcher Name="WidgetSwitcher_0" ExportPath="/Script/UMG.WidgetSwitcher'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_0'"
-   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_4" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_4'"
+Begin Object Class=/Script/UMG.WidgetSwitcher Name="WidgetSwitcher_Siparis" ExportPath="/Script/UMG.WidgetSwitcher'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Siparis'"
+   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_4" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Siparis.WidgetSwitcherSlot_4'"
    End Object
-   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_3" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_3'"
+   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_3" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Siparis.WidgetSwitcherSlot_3'"
    End Object
-   Begin Object Name="WidgetSwitcherSlot_4" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_4'"
-      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher_0'"
+   Begin Object Name="WidgetSwitcherSlot_4" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Siparis.WidgetSwitcherSlot_4'"
+      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher_Siparis'"
       Content="/Script/UMG.VerticalBox'Dekor_VBox'"
    End Object
-   Begin Object Name="WidgetSwitcherSlot_3" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_3'"
-      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher_0'"
+   Begin Object Name="WidgetSwitcherSlot_3" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Siparis.WidgetSwitcherSlot_3'"
+      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher_Siparis'"
       Content="/Script/UMG.VerticalBox'Gida_VBox'"
    End Object
    Slots(0)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_3'"
    Slots(1)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_4'"
+   DisplayLabel="WidgetSwitcher_Siparis"
 End Object
 Begin Object Class=/Script/UMG.VerticalBox Name="Gida_VBox" ExportPath="/Script/UMG.VerticalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Gida_VBox'"
    Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_0" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Gida_VBox.VerticalBoxSlot_0'"
@@ -575,7 +594,6 @@ Begin Object Class=/Script/UMG.VerticalBox Name="Gida_VBox" ExportPath="/Script/
       Content="/Script/UMG.HorizontalBox'G_Ürünleri_HBox'"
    End Object
    Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_0'"
-   bExpandedInDesigner=True
    DisplayLabel="Gida_VBox"
 End Object
 Begin Object Class=/Script/UMG.HorizontalBox Name="G_Ürünleri_HBox" ExportPath="/Script/UMG.HorizontalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.G_Ürünleri_HBox'"
@@ -593,7 +611,6 @@ Begin Object Class=/Script/UMG.HorizontalBox Name="G_Ürünleri_HBox" ExportPath
    End Object
    Slots(0)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_2'"
    Slots(1)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_0'"
-   bExpandedInDesigner=True
    DisplayLabel="G_Ürünleri_HBox"
 End Object
 Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_1835" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_1835'"
@@ -637,5 +654,155 @@ Begin Object Class=/Script/UMG.HorizontalBox Name="D_Ürünleri_HBox" ExportPath
 End Object
 Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_3" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_3'"
    Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "5B4BF62B473E9B6F153A73ABECD90996", "Ürünler...")
+End Object
+Begin Object Class=/Script/UMG.VerticalBox Name="Reklam_VBox" ExportPath="/Script/UMG.VerticalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox'"
+   Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_1" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox.VerticalBoxSlot_1'"
+   End Object
+   Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_0" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox.VerticalBoxSlot_0'"
+   End Object
+   Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_2" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox.VerticalBoxSlot_2'"
+   End Object
+   Begin Object Name="VerticalBoxSlot_1" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox.VerticalBoxSlot_1'"
+      Parent="/Script/UMG.VerticalBox'Reklam_VBox'"
+      Content="/Script/UMG.Button'ReklamBas_Btn'"
+   End Object
+   Begin Object Name="VerticalBoxSlot_0" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox.VerticalBoxSlot_0'"
+      Parent="/Script/UMG.VerticalBox'Reklam_VBox'"
+      Content="/Script/UMG.Image'Reklam_image'"
+   End Object
+   Begin Object Name="VerticalBoxSlot_2" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_VBox.VerticalBoxSlot_2'"
+      Parent="/Script/UMG.VerticalBox'Reklam_VBox'"
+      Content="/Script/UMG.Spacer'Spacer_143'"
+   End Object
+   Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_0'"
+   Slots(1)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_2'"
+   Slots(2)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_1'"
+   DisplayLabel="Reklam_VBox"
+End Object
+Begin Object Class=/Script/UMG.Image Name="Reklam_image" ExportPath="/Script/UMG.Image'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Reklam_image'"
+   Brush=(ImageType=FullColor,ImageSize=(X=600.000000,Y=600.000000),ResourceObject="/Script/Engine.Texture2D'/Game/Tex/ReklamBas.ReklamBas'")
+   DisplayLabel="Reklam_image"
+End Object
+Begin Object Class=/Script/UMG.Spacer Name="Spacer_143" ExportPath="/Script/UMG.Spacer'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Spacer_143'"
+   Size=(X=1.000000,Y=10.000000)
+End Object
+Begin Object Class=/Script/UMG.Button Name="ReklamBas_Btn" ExportPath="/Script/UMG.Button'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.ReklamBas_Btn'"
+   Begin Object Class=/Script/UMG.ButtonSlot Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.ReklamBas_Btn.ButtonSlot_0'"
+   End Object
+   Begin Object Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.ReklamBas_Btn.ButtonSlot_0'"
+      Parent="/Script/UMG.Button'ReklamBas_Btn'"
+      Content="/Script/UMG.TextBlock'TextBlock_521'"
+   End Object
+   Slots(0)="/Script/UMG.ButtonSlot'ButtonSlot_0'"
+   DisplayLabel="ReklamBas_Btn"
+End Object
+Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_521" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_521'"
+   Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "C414F4D4460B86729DAD8995B24F04F2", "Reklam Ver")
+End Object
+Begin Object Class=/Script/UMG.HorizontalBox Name="Bank_HBox" ExportPath="/Script/UMG.HorizontalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox'"
+   Begin Object Class=/Script/UMG.HorizontalBoxSlot Name="HorizontalBoxSlot_0" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox.HorizontalBoxSlot_0'"
+   End Object
+   Begin Object Class=/Script/UMG.HorizontalBoxSlot Name="HorizontalBoxSlot_1" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox.HorizontalBoxSlot_1'"
+   End Object
+   Begin Object Class=/Script/UMG.HorizontalBoxSlot Name="HorizontalBoxSlot_2" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox.HorizontalBoxSlot_2'"
+   End Object
+   Begin Object Name="HorizontalBoxSlot_0" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox.HorizontalBoxSlot_0'"
+      Parent="/Script/UMG.HorizontalBox'Bank_HBox'"
+      Content="/Script/UMG.VerticalBox'VerticalBox_355'"
+   End Object
+   Begin Object Name="HorizontalBoxSlot_1" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox.HorizontalBoxSlot_1'"
+      Parent="/Script/UMG.HorizontalBox'Bank_HBox'"
+      Content="/Script/UMG.Spacer'Spacer_1'"
+   End Object
+   Begin Object Name="HorizontalBoxSlot_2" ExportPath="/Script/UMG.HorizontalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_HBox.HorizontalBoxSlot_2'"
+      Parent="/Script/UMG.HorizontalBox'Bank_HBox'"
+      Content="/Script/UMG.WidgetSwitcher'WidgetSwitcher_Bank'"
+   End Object
+   Slots(0)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_0'"
+   Slots(1)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_1'"
+   Slots(2)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_2'"
+   bExpandedInDesigner=True
+   DisplayLabel="Bank_HBox"
+End Object
+Begin Object Class=/Script/UMG.VerticalBox Name="VerticalBox_355" ExportPath="/Script/UMG.VerticalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355'"
+   Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_0" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355.VerticalBoxSlot_0'"
+   End Object
+   Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_1" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355.VerticalBoxSlot_1'"
+   End Object
+   Begin Object Class=/Script/UMG.VerticalBoxSlot Name="VerticalBoxSlot_3" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355.VerticalBoxSlot_3'"
+   End Object
+   Begin Object Name="VerticalBoxSlot_0" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355.VerticalBoxSlot_0'"
+      Parent="/Script/UMG.VerticalBox'VerticalBox_355'"
+      Content="/Script/UMG.Button'Banka_Yönet_Btn'"
+   End Object
+   Begin Object Name="VerticalBoxSlot_1" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355.VerticalBoxSlot_1'"
+      Parent="/Script/UMG.VerticalBox'VerticalBox_355'"
+      Content="/Script/UMG.Button'Fatura_Btn'"
+   End Object
+   Begin Object Name="VerticalBoxSlot_3" ExportPath="/Script/UMG.VerticalBoxSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.VerticalBox_355.VerticalBoxSlot_3'"
+      Parent="/Script/UMG.VerticalBox'VerticalBox_355'"
+      Content="/Script/UMG.Spacer'Spacer_316'"
+   End Object
+   Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_0'"
+   Slots(1)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_3'"
+   Slots(2)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_1'"
+End Object
+Begin Object Class=/Script/UMG.Button Name="Banka_Yönet_Btn" ExportPath="/Script/UMG.Button'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Banka_Yönet_Btn'"
+   Begin Object Class=/Script/UMG.ButtonSlot Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Banka_Yönet_Btn.ButtonSlot_0'"
+   End Object
+   Begin Object Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Banka_Yönet_Btn.ButtonSlot_0'"
+      Parent="/Script/UMG.Button'Banka_Yönet_Btn'"
+      Content="/Script/UMG.TextBlock'TextBlock_635'"
+   End Object
+   WidgetStyle=(Normal=(TintColor=(SpecifiedColor=(R=0.215861,G=0.215861,B=0.215861,A=1.000000))),Hovered=(TintColor=(SpecifiedColor=(R=0.215861,G=0.215861,B=0.215861,A=1.000000)),OutlineSettings=(Color=(SpecifiedColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)),RoundingType=HalfHeightRadius)),Pressed=(TintColor=(SpecifiedColor=(R=0.215861,G=0.215861,B=0.215861,A=1.000000))),Disabled=(TintColor=(SpecifiedColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000))))
+   Slots(0)="/Script/UMG.ButtonSlot'ButtonSlot_0'"
+   DisplayLabel="Banka_Yönet_Btn"
+End Object
+Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_635" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_635'"
+   Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "B419A84644F7B2C3A3EAA78E71D47313", "Banka")
+End Object
+Begin Object Class=/Script/UMG.Spacer Name="Spacer_316" ExportPath="/Script/UMG.Spacer'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Spacer_316'"
+   Size=(X=1.000000,Y=5.000000)
+End Object
+Begin Object Class=/Script/UMG.Button Name="Fatura_Btn" ExportPath="/Script/UMG.Button'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Fatura_Btn'"
+   Begin Object Class=/Script/UMG.ButtonSlot Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Fatura_Btn.ButtonSlot_0'"
+   End Object
+   Begin Object Name="ButtonSlot_0" ExportPath="/Script/UMG.ButtonSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Fatura_Btn.ButtonSlot_0'"
+      Parent="/Script/UMG.Button'Fatura_Btn'"
+      Content="/Script/UMG.TextBlock'TextBlock_745'"
+   End Object
+   WidgetStyle=(Normal=(TintColor=(SpecifiedColor=(R=0.215861,G=0.215861,B=0.215861,A=1.000000))),Hovered=(TintColor=(SpecifiedColor=(R=0.215861,G=0.215861,B=0.215861,A=1.000000)),OutlineSettings=(Color=(SpecifiedColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)),RoundingType=HalfHeightRadius)),Pressed=(TintColor=(SpecifiedColor=(R=0.215861,G=0.215861,B=0.215861,A=1.000000))),Disabled=(TintColor=(SpecifiedColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000))))
+   Slots(0)="/Script/UMG.ButtonSlot'ButtonSlot_0'"
+   DisplayLabel="Fatura_Btn"
+End Object
+Begin Object Class=/Script/UMG.TextBlock Name="TextBlock_745" ExportPath="/Script/UMG.TextBlock'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.TextBlock_745'"
+   Text=NSLOCTEXT("[38B2D6258797B9B993B31D750A43D517]", "C9CA2E7040006D2CAC3AA1A07426A306", "Faturalar")
+End Object
+Begin Object Class=/Script/UMG.Spacer Name="Spacer_1" ExportPath="/Script/UMG.Spacer'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Spacer_1'"
+   Size=(X=10.000000,Y=1.000000)
+End Object
+Begin Object Class=/Script/UMG.WidgetSwitcher Name="WidgetSwitcher_Bank" ExportPath="/Script/UMG.WidgetSwitcher'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Bank'"
+   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_0" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Bank.WidgetSwitcherSlot_0'"
+   End Object
+   Begin Object Class=/Script/UMG.WidgetSwitcherSlot Name="WidgetSwitcherSlot_1" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Bank.WidgetSwitcherSlot_1'"
+   End Object
+   Begin Object Name="WidgetSwitcherSlot_0" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Bank.WidgetSwitcherSlot_0'"
+      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher_Bank'"
+      Content="/Script/UMG.VerticalBox'Bank_VBox'"
+   End Object
+   Begin Object Name="WidgetSwitcherSlot_1" ExportPath="/Script/UMG.WidgetSwitcherSlot'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.WidgetSwitcher_Bank.WidgetSwitcherSlot_1'"
+      Parent="/Script/UMG.WidgetSwitcher'WidgetSwitcher_Bank'"
+      Content="/Script/UMG.VerticalBox'Fatura_VBox'"
+   End Object
+   Slots(0)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_0'"
+   Slots(1)="/Script/UMG.WidgetSwitcherSlot'WidgetSwitcherSlot_1'"
+   bExpandedInDesigner=True
+   DisplayLabel="WidgetSwitcher_Bank"
+End Object
+Begin Object Class=/Script/UMG.VerticalBox Name="Bank_VBox" ExportPath="/Script/UMG.VerticalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Bank_VBox'"
+   DisplayLabel="Bank_VBox"
+End Object
+Begin Object Class=/Script/UMG.VerticalBox Name="Fatura_VBox" ExportPath="/Script/UMG.VerticalBox'/Game/Widget/W_TabletUI.W_TabletUI:WidgetTree.Fatura_VBox'"
+   DisplayLabel="Fatura_VBox"
 End Object
 
